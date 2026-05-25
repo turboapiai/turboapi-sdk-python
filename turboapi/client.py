@@ -19,7 +19,7 @@ from turboapi.models import (
     TaskStatus,
 )
 
-DEFAULT_BASE_URL = "https://turboapi.ai/api/v1"
+DEFAULT_BASE_URL = "https://api.turboapi.ai/api/v1"
 DEFAULT_TIMEOUT = 30.0
 DEFAULT_POLL_INTERVAL = 2.0
 DEFAULT_POLL_TIMEOUT = 300.0

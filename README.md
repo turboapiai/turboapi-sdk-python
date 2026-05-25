@@ -52,7 +52,7 @@ for t in tasks.items:
 TurboAPIClient(
     api_key: str | None = None,
     *,
-    base_url: str = "https://turboapi.ai/api/v1",
+    base_url: str = "https://api.turboapi.ai/api/v1",
     timeout: float = 30.0,
 )
 ```
