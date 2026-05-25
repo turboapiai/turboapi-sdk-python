@@ -50,5 +50,5 @@ testpaths = ["tests"]
 
 [dependency-groups]
 dev = [
-    "pytest-httpx>=0.36.2",
+    "pytest-httpx>=0.35,<0.36",
 ]
