@@ -1,0 +1,53 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "turboapi-sdk"
+version = "0.1.0"
+description = "TurboAPI SDK - Call AI services through the TurboAPI platform"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+keywords = ["turboapi", "api", "ai", "sdk"]
+authors = [
+    { name = "TurboAPI Team" },
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+dependencies = [
+    "httpx>=0.27,<1",
+    "pydantic>=2,<3",
+]
+
+[project.urls]
+Homepage = "https://turboapi.ai"
+Repository = "https://github.com/turboapi/turboapi"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+    "pytest-asyncio>=0.24",
+    "pytest-httpx>=0.35",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["turboapi"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[dependency-groups]
+dev = [
+    "pytest-httpx>=0.36.2",
+]
