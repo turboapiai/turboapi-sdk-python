@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "turboapi-sdk"
-version = "0.1.0"
+version = "0.1.1"
 description = "TurboAPI SDK - Call AI services through the TurboAPI platform"
 readme = "README.md"
 license = { text = "MIT" }
